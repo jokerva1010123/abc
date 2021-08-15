@@ -1,6 +1,6 @@
 # Лабораторная работа 3 
 
-Документ `*.rsf` лежит в ветке [lab_03](https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina/tree/lab_03/lab_03)
+Документ `*.rsf` лежит в ветке [lab_03](https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh/-/tree/lab_03/lab_03)
 
 Условие задачи: Исправить ошибку в программе по ее указанному описанию. Входными данными являются адрес репозитория Git и номер ошибки, указанный в Issue в GitLab, выходными – измененный репозиторий и закрытая ошибка.
 
@@ -8,7 +8,7 @@
 ---
 ### Уровень 0
 
-![01_A-0](uploads/a809f292176a4b3432457af63d9cc80d/01_A-0.png)
+![image](uploads/a7fc1c7e961409605f3c589f30a11d30/image.png)
 
 **Общая задача (А0)** : Исправить ошибку в программе по ее описанию.
 + Вход: Адрес репозитория в GitLab, номер ошибки (issue в GitLab).
@@ -22,7 +22,7 @@
 
 ### Уровень 1
 
-![02_A0](uploads/4226fa1e2773ddbb70e4b2cb18bdb44a/02_A0.png)
+![image](uploads/808ea5fd4ddc6b1a8da2c3894fb8b9c9/image.png)
 
 **А1** : Получить рабочую копию можно с помощью команды `git clone`.
 
@@ -42,7 +42,7 @@
 
 ### Уровень 2 (А2)<a name="A2"></a>
 
-![03_A2](uploads/af191b274733a4b1198fc778594020de/03_A2.png)
+![image](uploads/020bd4e49f19287b581684dd316c49fe/image.png)
 
 **A21** : Открыть ошибку можно в разделе `issue` в `GitLab`, там найти нужную ошибку по ее номеру.
 
@@ -56,7 +56,7 @@
 
 ### Уровень 2 (А3)<a name="A4"></a>
 
-![04_A3](uploads/dc4967d273494708389cfc553adfd7cb/04_A3.png)
+![image](uploads/9699fef1db4d47d2ceb364690fd42b94/image.png)
 
 **A31** : Необходимо установить имя и почту пользователя. Сделать это необходимо с помощью команд `git config user.name` и `git config user.email`.
 
@@ -68,7 +68,7 @@
 
 ### Уровень 2 (A4)<a name="A6"></a>
 
-![05_A4](uploads/856f6e6a9bd57cc2a09a4d6c87b09aa7/05_A4.png)
+![image](uploads/1c6d757ed603361e4cde214587df4002/image.png)
 
 **A41** : Необходимо установить имя и почту пользователя. Сделать это необходимо с помощью команд `git config user.name` и `git config user.email`, если этого не сделали ранее.
 

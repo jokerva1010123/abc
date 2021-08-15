@@ -41,8 +41,8 @@ core.ignorecase=true
 Установка значений для этих переменных.
 
 ```
-$ git config user.name kiv19u492
-$ git config user.email ir1nak0z@yandex.ru
+$ git config user.name dv20iu54
+$ git config user.email dv20iu54@student.bmstu.ru
 $ git config --list
 core.repositoryformatversion=0
 core.filemode=false
@@ -50,8 +50,8 @@ core.bare=false
 core.logallrefupdates=true
 core.symlinks=false
 core.ignorecase=true
-user.name=kiv19u492
-user.email=ir1nak0z@yandex.ru
+user.name=dv20iu54
+user.email=dv20iu54@student.bmstu.ru
 ```
 
 3) Размещение в папке для выполнения лабораторной работы исходного кода программы из архива, проверка:
@@ -301,7 +301,7 @@ $ git commit -m "Add incorrect test"
 
 Описана ошибка, приведен тестовый пример, а так же вывод, который должен быть и который программа выводит.
 
-![Снимок_экрана__173_](uploads/260d2d43ce8fc936ae37d38b39bf3523/Снимок_экрана__173_.png)
+![image](uploads/aa7c8012653390057cf1b7652b5da74a/image.png)
 
 # 7. Исправление ошибки.
 
@@ -371,15 +371,7 @@ $ git commit -m "Fixed a bug in the function"
  1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
-# 8. Описание исправлений в issue.
-
-В issue описано изменения, сделанные в функции, а так же указан номер ревизии изменения и слияние двух веток, а именно fix и master.
-
-Issue закрыта.
-
-![Снимок_экрана__174_](uploads/b4c49398c5b777a037ff4c8a226ec664/Снимок_экрана__174_.png)
-
-# 9. Выполнение объединений изменений с веткой master.
+# 8. Выполнение объединений изменений с веткой master.
 
 Переключились на ветку master и выполнили объединение изменений (для этого
 используется команда git merge)
@@ -401,7 +393,7 @@ $ git status
 На ветке master
 нечего коммитить, нет изменений в рабочем каталоге
 ```
-# 10. Анализ изменения с помощью команды *git log --oneline --graph --all*
+# 9. Анализ изменения с помощью команды *git log --oneline --graph --all*
 
 ```
 $ git log --oneline --graph --all
@@ -602,61 +594,53 @@ $ git status
 
 ### Задание 3.1
 
-Создана ветвь с именем lab_01, в которой расположены коды решенных задач. Создан [merge request](https://git.iu7.bmstu.ru/iu7-cprog/iu7-cprog-labs-2020/iu7-cprog-labs-2020-kozlovairina/merge_requests/1)
+Создана ветвь с именем lab_01, в которой расположены коды решенных задач. Создан [merge request](https://git.iu7.bmstu.ru/iu7-cprog/iu7-cprog-labs-2021/iu7-cprog-labs-2021-dinhvietanh/-/merge_requests/5)
 
 ### Задание 3.2
 
 Для получения копии удаленного репозитория необходимо воспользоваться командой ***git clone***.
 
 ```
-$ git clone https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina.git
-Клонирование в «iu7-software-engineering-labs-2020-kozlovairina»…
+$ git clone https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh.git
+Клонирование в «iu7-software-engineering-labs-2021-dinhvietanh»…
 Username for 'https://git.iu7.bmstu.ru':
-Password for 'https://kiv19u492@git.iu7.bmstu.ru':
+Password for 'https://dv20iu54@git.iu7.bmstu.ru':
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-Распаковка объектов: 100% (3/3), 219 bytes | 10.00 KiB/s, готово.
-
+Распаковка объектов: 100% (3/3), готово.
 ```
 
-Перейдем в рабочую директорию ***iu7-software-engineering-labs-2020-kozlovairina***.
+Перейдем в рабочую директорию ***iu7-software-engineering-labs-2021-dinhvietanh***.
 
 Создаем ветки *lab_02_a* и *lab_02_b* при помощи команды ***git_branch***. И переключимся на ветку *lab_02_a*.
 
 ```
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2
-$ cd iu7-software-engineering-labs-2020-kozlovairina
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
+$ cd iu7-software-engineering-labs-2021-dinhvietanh
 $ git branch lab_02_a
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
 $ git branch lab_02_b
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
 $ git branch
   lab_02_a
   lab_02_b
 * master
-
 ```
 
 ### Работа с веткой lab_02_a
 
 Создаем файл *lab_02_a.txt* и файл *.gitignore* и добавляем их под версионный контроль.
 ```
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
 $ touch .gitignore
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
 $ touch lab_02_a.txt
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
+
 $ git add .gitignore lab_02_a.txt
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
 $ git commit -m "Added lab_02_a.txt and .gitignore"
-[lab_02_a e6be441] Added lab_02_a.txt and .gitignore
- 2 files changed, 2 insertions(+)
+[master a6c13f8] Added lab_02_a.txt and .gitignore
+ 2 files changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 .gitignore
  create mode 100644 lab_02_a.txt
 
@@ -664,29 +648,18 @@ $ git commit -m "Added lab_02_a.txt and .gitignore"
 Отправляем изменения в удаленный репозиторий при помощи команды ***git push***
 
 ```
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
 $ git push --set-upstream origin lab_02_a
 Username for 'https://git.iu7.bmstu.ru':
-Password for 'https://kiv19u492@git.iu7.bmstu.ru':
-Перечисление объектов: 5, готово.
-Подсчет объектов: 100% (5/5), готово.
-При сжатии изменений используется до 4 потоков
-Сжатие объектов: 100% (2/2), готово.
-Запись объектов: 100% (4/4), 351 bytes | 58.00 KiB/s, готово.
-Всего 4 (изменения 0), повторно использовано 0 (изменения 0)
+Password for 'https://dv20iu54@git.iu7.bmstu.ru':
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 remote:
 remote: To create a merge request for lab_02_a, visit:
-remote:   https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina/merge_requests/new?merge_request%5Bsource_branch%5D=lab_02_a
+remote:   https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh/-/merge_requests/new?merge_request%5Bsource_branch%5D=lab_02_a
 remote:
-To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina.git
+To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh.git
  * [new branch]      lab_02_a -> lab_02_a
-Ветка «lab_02_a» отслеживает внешнюю ветку «lab_02_a» из «origin».
-
+Branch 'lab_02_a' set up to track remote branch 'lab_02_a' from 'origin'.
 ```
-
-Создаем [Merge Request A](https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina/merge_requests/1) для слияния ветки lab_02_a и master.
-
-![Снимок_экрана__180_](uploads/a95cade157897e1ea30012de39f11cc0/Снимок_экрана__180_.png)
 
 ### Работа с веткой lab_02_b.
 
@@ -695,16 +668,12 @@ To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-la
 $ git checkout lab_02_b
 Переключено на ветку «lab_02_b»
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
 $ touch lab_02_b.txt
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
 $ touch .gitignore
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
 $ git add .gitignore lab_02_b.txt
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/iu7-software-engineering-labs-2020-kozlovairina
 $ git commit -m "Added: lab_02_b.txt and .gitignore"
 [lab_02_b 3d78f0a] Added: lab_02_b.txt and .gitignore
  2 files changed, 2 insertions(+)
@@ -716,58 +685,42 @@ $ git commit -m "Added: lab_02_b.txt and .gitignore"
 ```
 $ git push --set-upstream origin lab_02_b
 Username for 'https://git.iu7.bmstu.ru':
-Password for 'https://kiv19u492@git.iu7.bmstu.ru':
-Перечисление объектов: 5, готово.
-Подсчет объектов: 100% (5/5), готово.
-При сжатии изменений используется до 4 потоков
-Сжатие объектов: 100% (2/2), готово.
-Запись объектов: 100% (4/4), 350 bytes | 58.00 KiB/s, готово.
-Всего 4 (изменения 0), повторно использовано 0 (изменения 0)
+Password for 'https://dv20iu54@git.iu7.bmstu.ru':
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 remote:
-remote: To create a merge request for lab_02_b, visit:
-remote:   https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina/merge_requests/new?merge_request%5Bsource_branch%5D=lab_02_b
+remote: To create a merge request for lab_02_a, visit:
+remote:   https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh/-/merge_requests/new?merge_request%5Bsource_branch%5D=lab_02_a
 remote:
-To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina.git
+To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh.git
  * [new branch]      lab_02_b -> lab_02_b
-Ветка «lab_02_b» отслеживает внешнюю ветку «lab_02_b» из «origin».
-
+Branch 'lab_02_b' set up to track remote branch 'lab_02_b' from 'origin'.
 ```
-
-Создаем [Merge Request B](https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina/merge_requests/2) для слияния ветки lab_02_b и master.
-
-![Снимок_экрана__181_](uploads/d6ade07d6b9811ac26677ac8243e3632/Снимок_экрана__181_.png)
-
 
 ### Разрешение конфликта.
 
 Когда преподаватель принял Merge Request B, то возникает конфликт с Merge Request A. Так как есть два файла с одинаковым названием *.gitignore*, но с разным содержанием.
-
-![Снимок_экрана__182_](uploads/4dbdc151882fa523262fc60602ba58d0/Снимок_экрана__182_.png)
 
 Чтобы решить данный конфликт требуется выбрать одну из версий файла *.gitignore*.
 Для этого добавим в файл *.gitignore* строку "*.exe"
 
 И сохраним наши изменения.
 
-Мы видим теперь, что конфликта в Merge Request A нет.
-![Снимок_экрана__183_](uploads/90bab871a53eb6d10ab2ff912a62acab/Снимок_экрана__183_.png)
-
+Tеперь конфликта в Merge Request A нет.
 
 ### Задание 3.3
 
 Чтобы получить удаленный репозиторий, воспользуемся командой ***git clone***. И перейдем в рабочую директорию с помощью команды ***cd***.
 
 ```
-$ git clone https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina.git
-Клонирование в «iu7-software-engineering-labs-2020-kozlovairina»…
+$  git clone https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh.git
+Cloning into 'iu7-software-engineering-labs-2021-dinhvietanh'...
 Username for 'https://git.iu7.bmstu.ru':
-Password for 'https://kiv19u492@git.iu7.bmstu.ru':
-remote: Enumerating objects: 11, done.
-remote: Counting objects: 100% (11/11), done.
-remote: Compressing objects: 100% (5/5), done.
-remote: Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
-Распаковка объектов: 100% (11/11), 856 bytes | 3.00 KiB/s, готово.
-
+Password for 'https://dv20iu54@git.iu7.bmstu.ru':
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
 ```
 
 ### Работа с текстовым файлом, создание конфликта.
@@ -776,27 +729,21 @@ remote: Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
 
 ```
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3
-$ cd iu7-software-engineering-labs-2020-kozlovairina
+$ cd iu7-software-engineering-labs-2021-dinhvietanh
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3/iu7-software-engineering-labs-2020-kozlovairina
 $ git branch lab_02_c
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3/iu7-software-engineering-labs-2020-kozlovairina
 $ git checkout lab_02_c
 Переключено на ветку «lab_02_c»
 ```
-
 
 Создаем файл lab_02_c.txt и добавляем его под версионный контроль.
 
 ```
 $ touch lab_02_c.txt
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3/iu7-software-engineering-labs-2020-kozlovairina
 $ git add lab_02_c.txt
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3/iu7-software-engineering-labs-2020-kozlovairina
 $ git commit -m "Added: lab_02_c.txt"
 [lab_02_c 90643da] Added: lab_02_c.txt
  1 file changed, 8 insertions(+)
@@ -807,10 +754,9 @@ $ git commit -m "Added: lab_02_c.txt"
 Изменения в файле *lab_02_c.txt* отправляем в удаленный репозиторий при помощи команды ***git push*** 
 
 ```
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3/iu7-software-engineering-labs-2020-kozlovairina
 $ git push --set-upstream origin lab_02_c
 Username for 'https://git.iu7.bmstu.ru':
-Password for 'https://kiv19u492@git.iu7.bmstu.ru':
+Password for 'https://dv20iu54@git.iu7.bmstu.ru':
 Перечисление объектов: 4, готово.
 Подсчет объектов: 100% (4/4), готово.
 При сжатии изменений используется до 4 потоков
@@ -819,9 +765,9 @@ Password for 'https://kiv19u492@git.iu7.bmstu.ru':
 Всего 3 (изменения 0), повторно использовано 0 (изменения 0)
 remote:
 remote: To create a merge request for lab_02_c, visit:
-remote:   https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina/merge_requests/new?merge_request%5Bsource_branch%5D=lab_02_c
+remote:   https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh/merge_requests/new?merge_request%5Bsource_branch%5D=lab_02_c
 remote:
-To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina.git
+To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh.git
  * [new branch]      lab_02_c -> lab_02_c
 Ветка «lab_02_c» отслеживает внешнюю ветку «lab_02_c» из «origin».
 ```
@@ -830,19 +776,17 @@ To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-la
 ```
 $ git add lab_02_c.txt
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3/iu7-software-engineering-labs-2020-kozlovairina
 $ git commit -m "Added: paragraph 3 in lab_02_c.txt"
 [lab_02_c f81c2c4] Added: paragraph 3 in lab_02_c.txt
  1 file changed, 10 insertions(+), 1 deletion(-)
 
 ```
-
 Клонируем удаленный репозиторий в новую папку.
 ```
-$ git clone https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina.git
-Клонирование в «iu7-software-engineering-labs-2020-kozlovairina»…
+$ git clone https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh.git
+Клонирование в «iu7-software-engineering-labs-2021-dinhvietanh»…
 Username for 'https://git.iu7.bmstu.ru':
-Password for 'https://kiv19u492@git.iu7.bmstu.ru':
+Password for 'https://dv20iu54@git.iu7.bmstu.ru':
 remote: Enumerating objects: 14, done.
 remote: Counting objects: 100% (14/14), done.
 remote: Compressing objects: 100% (8/8), done.
@@ -854,15 +798,13 @@ remote: Total 14 (delta 0), reused 0 (delta 0), pack-reused 0
 ```
 $ git add lab_02_c.txt
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3.1/iu7-software-engineering-labs-2020-kozlovairina
 $ git commit -m "Added paragraph 2 in lab_02_c.txt"
 [lab_02_c c41a145] Added paragraph 2 in lab_02_c.txt
  1 file changed, 12 insertions(+), 1 deletion(-)
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3.1/iu7-software-engineering-labs-2020-kozlovairina
 $ git push
 Username for 'https://git.iu7.bmstu.ru':
-Password for 'https://kiv19u492@git.iu7.bmstu.ru':
+Password for 'https://dv20iu54@git.iu7.bmstu.ru':
 Перечисление объектов: 5, готово.
 Подсчет объектов: 100% (5/5), готово.
 При сжатии изменений используется до 4 потоков
@@ -871,9 +813,9 @@ Password for 'https://kiv19u492@git.iu7.bmstu.ru':
 Всего 3 (изменения 0), повторно использовано 0 (изменения 0)
 remote:
 remote: To create a merge request for lab_02_c, visit:
-remote:   https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina/merge_requests/new?merge_request%5Bsource_branch%5D=lab_02_c
+remote:   https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh/merge_requests/new?merge_request%5Bsource_branch%5D=lab_02_c
 remote:
-To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina.git
+To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh.git
    90643da..c41a145  lab_02_c -> lab_02_c
 ```
 
@@ -881,21 +823,14 @@ To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-la
 ```
 $ cd ..
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3.1
 $ cd ..
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2
 $ cd work2_3.3
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3
 $ ls -a
-.  ..  iu7-software-engineering-labs-2020-kozlovairina
+.  ..  iu7-software-engineering-labs-2021-dinhvietanh
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3
-$ ^C
-
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3
-$ cd iu7-software-engineering-labs-2020-kozlovairina
+$ cd iu7-software-engineering-labs-21-dinhvietanh
 
 ```
 Отправить изменения не удается, так как до этого момента кто-то уже воспользовался командой ***git push***.
@@ -903,10 +838,10 @@ $ cd iu7-software-engineering-labs-2020-kozlovairina
 ```
 $ git push
 Username for 'https://git.iu7.bmstu.ru':
-Password for 'https://kiv19u492@git.iu7.bmstu.ru':
-To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina.git
+Password for 'https://dv20iu54@git.iu7.bmstu.ru':
+To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh.git
  ! [rejected]        lab_02_c -> lab_02_c (fetch first)
-error: не удалось отправить некоторые ссылки в «https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina.git»
+error: не удалось отправить некоторые ссылки в «https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh.git»
 подсказка: Обновления были отклонены, так как внешний репозиторий содержит
 подсказка: изменения, которых у вас нет в вашем локальном репозитории.
 подсказка: Обычно, это связанно с тем, что кто-то уже отправил изменения в
@@ -921,29 +856,26 @@ error: не удалось отправить некоторые ссылки в
 ```
 $ git pull
 Username for 'https://git.iu7.bmstu.ru':
-Password for 'https://kiv19u492@git.iu7.bmstu.ru':
+Password for 'https://dv20iu54@git.iu7.bmstu.ru':
 remote: Enumerating objects: 5, done.
 remote: Counting objects: 100% (5/5), done.
 remote: Compressing objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Распаковка объектов: 100% (3/3), 613 bytes | 4.00 KiB/s, готово.
-Из https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina
+Из https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh
    90643da..c41a145  lab_02_c   -> origin/lab_02_c
 Автослияние lab_02_c.txt
 КОНФЛИКТ (содержимое): Конфликт слияния в lab_02_c.txt
 Не удалось провести автоматическое слияние; исправьте конфликты и сделайте коммит результата.
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3/iu7-software-engineering-labs-2020-kozlovairina
 $ git add lab_02_c.txt
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3/iu7-software-engineering-labs-2020-kozlovairina
 $ git commit -m "Added lab_02_c.txt true"
 [lab_02_c 14a9e3c] Added lab_02_c.txt true
 
-tni67@LAPTOP-381UBCAR MINGW64 ~/work2/work2_3.3/iu7-software-engineering-labs-2020-kozlovairina
 $ git push
 Username for 'https://git.iu7.bmstu.ru':
-Password for 'https://kiv19u492@git.iu7.bmstu.ru':
+Password for 'https://dv20iu54@git.iu7.bmstu.ru':
 Перечисление объектов: 10, готово.
 Подсчет объектов: 100% (10/10), готово.
 При сжатии изменений используется до 4 потоков
@@ -952,14 +884,9 @@ Password for 'https://kiv19u492@git.iu7.bmstu.ru':
 Всего 6 (изменения 2), повторно использовано 0 (изменения 0)
 remote:
 remote: To create a merge request for lab_02_c, visit:
-remote:   https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina/merge_requests/new?merge_request%5Bsource_branch%5D=lab_02_c
+remote:   https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh/merge_requests/new?merge_request%5Bsource_branch%5D=lab_02_c
 remote:
-To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2020/iu7-software-engineering-labs-2020-kozlovairina.git
+To https://git.iu7.bmstu.ru/iu7-software-engineering/iu7-software-engineering-labs-2021/iu7-software-engineering-labs-2021-dinhvietanh.git
    c41a145..14a9e3c  lab_02_c -> lab_02_c
 
 ```
-
-
-
-
-
